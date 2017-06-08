@@ -1,28 +1,37 @@
 <html>
 <head>
 	<title>Colour Picker Game</title>
-	<link rel="stylesheet" type="text/css" href="ColourPicker.css">
+
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="ColourPicker.css">
 </head>
 <body>
+		<div id="header">
+		<h1>Colour Picker
+			<br>
+			<span id="pickedColour"></span>
+			<br>
+			Game</h1>
+		</div>
+		<div id="stripe">
+			<span id= "left">
+				<button class="btn btn-default" id ="reset">New Colours</button>
+			</span>
+			<span id="message"></span>
+			<span id="right">
+				<button class="btn btn-success" id="easyBtn">Easy</button>
+				<button class="btn btn-danger selected" id ="hardBtn">Hard</button>
+			</span>
+		</div>
 
-	<h1>Colour Picker Game</h1>
-
-	<h3>Picked Colour: <span id="pickedColour"></span>
-
-	<div id="stripe">
-		<button class="btn btn-default" id ="reset">New Colours</button>
-		<span id="guessValue">
-	</div>
-
-	<div class="container">
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-	</div>
+		<div class="container">
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+		</div>
 
 
 	<script type="text/javascript" src="ColourPicker.js"></script>
